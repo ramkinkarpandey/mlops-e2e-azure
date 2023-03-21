@@ -1,7 +1,8 @@
 trigger:
   branches:
     include:
-    - 'releases/*'
+    - 'releases/*', 'main/*'
+
 
 stages:
 - stage: onPush
