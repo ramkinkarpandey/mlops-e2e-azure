@@ -6,12 +6,6 @@ trigger:
 
 stages:
 - stage: onPush
-  condition: |
-    and(
-      not(startsWith(variables['Build.SourceBranch'], 'refs/heads/releases')),
-      not(startsWith(variables['Build.SourceBranch'], 'refs/heads/main')),
-      not(startsWith(variables['Build.SourceBranch'], 'refs/tags/v'))
-    )
   jobs:
   - job: onPushJob
     pool:
@@ -62,11 +56,6 @@ stages:
         failTaskOnFailedTests: true
 
 - stage: onRelease
-  condition: |
-    or(
-      startsWith(variables['Build.SourceBranch'], 'refs/heads/releases'),
-      startsWith(variables['Build.SourceBranch'], 'refs/tags/v')
-    )
   jobs:
   - job: onReleaseJob
     pool:
