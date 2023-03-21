@@ -1,19 +1,19 @@
 {
     "environments": {
         "dev": {
-            "profile": "adb-demo",
-            "workspace_dir": "/Shared/e2e_mlops_ado/dev/dbx/e2e_mlops_dev",
-            "artifact_location": "dbfs:/Shared/e2e_mlops/dev/dbx/projects/e2e_mlops_ado_dbx_dev"
+            "profile": "dev",
+            "workspace_dir": "/e2e-mlops-azure/dev",
+            "artifact_location": "dbfs:/Shared/e2e_mlops/dev/dbx/projects/e2e-mlops-azure"
         },
         "staging": {
-            "profile": "adb-demo",
-            "workspace_dir": "/Shared/e2e_mlops_ado/staging/dbx/e2e_mlops_staging",
-            "artifact_location": "dbfs:/Shared/e2e_mlops/staging/dbx/projects/e2e_mlops_ado_dbx_staging"
+            "profile": "staging",
+            "workspace_dir": "/e2e-mlops-azure/staging",
+            "artifact_location": "dbfs:/Shared/e2e_mlops/staging/dbx/projects/e2e-mlops-azure"
         },
         "prod": {
-            "profile": "adb-demo",
-            "workspace_dir": "/Shared/e2e_mlops_ado/prod/dbx/e2e_mlops_prod",
-            "artifact_location": "dbfs:/Shared/e2e_mlops/prod/dbx/projects/e2e_mlops_ado_dbx_prod"
+            "profile": "prod",
+            "workspace_dir": "/e2e-mlops-azure/prod",
+            "artifact_location": "dbfs:/Shared/e2e_mlops/prod/dbx/projects/e2e-mlops-azure"
         }
     }
 }
