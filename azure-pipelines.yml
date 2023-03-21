@@ -1,7 +1,7 @@
 trigger:
   branches:
     include:
-    - 'releases/*', 'main/*'
+    - 'main/*'
 
 
 stages:
